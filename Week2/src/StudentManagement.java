@@ -3,15 +3,19 @@ import java.util.Objects;
 public class StudentManagement {
     static Student[] students = new Student[100];
     Integer count = 0;
+
     public static boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
     }
 
     public void addStudent(Student newStudent) {
         students[count] = new Student(newStudent);
-        count ++;
+        count++;
     }
 
+    /*
+     * Group students.
+     */
     public String studentsByGroup() {
         if (students[0] == null) {
             return "";
@@ -38,6 +42,9 @@ public class StudentManagement {
         return ans.toString();
     }
 
+    /*
+     *  Remove id-th student from list.
+     */
     public void removeStudent(String id) {
         int index = -1;
         for (int i = 0; i < count; i++) {
@@ -55,7 +62,7 @@ public class StudentManagement {
         for (int i = index; i < count - 1; i++) {
             students[i] = students[i + 1];
         }
-        //reduce count by 1
+        //reduce count by 1.
         count--;
     }
 

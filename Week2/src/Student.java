@@ -18,7 +18,6 @@ public class Student {
     /*
      * Constructor 2.
      */
-
     public Student(String name, String id, String email) {
         this.name = name;
         this.id = id;
@@ -27,7 +26,7 @@ public class Student {
     }
 
     /**
-     * Getters
+     * Getters.
      */
     public String getName() {
         return name;
@@ -42,26 +41,26 @@ public class Student {
     }
 
     /**
-     * Setter
+     * Setter.
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * Get information
+     * Get information.
      */
     public String getInfo() {
         String temp = "";
-        temp = temp + name + " - " ;
-        temp = temp + id + " - " ;
+        temp = temp + name + " - ";
+        temp = temp + id + " - ";
         temp = temp + group + " - ";
         temp = temp + email;
         return temp;
     }
 
     /**
-     * Copy Data
+     * Copy Data.
      */
     public Student(Student s) {
         this.name = s.name;
