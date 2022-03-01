@@ -32,7 +32,7 @@ public class Student {
      * @param email getEmail()
      * @param group getGroup()
      */
-    public Student(String name, String id, String group, String email){
+    public Student(String name, String id, String group, String email) {
         this.name = name;
         this.id = id;
         this.group = group;
