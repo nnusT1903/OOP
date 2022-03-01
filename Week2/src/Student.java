@@ -15,7 +15,7 @@ public class Student {
         email = "uet@vnu.edu.vn";
     }
 
-    /*
+    /**
      * Constructor 2.
      */
     public Student(String name, String id, String email) {

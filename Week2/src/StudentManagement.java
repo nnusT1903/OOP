@@ -13,7 +13,7 @@ public class StudentManagement {
         count++;
     }
 
-    /*
+    /**
      * Group students.
      */
     public String studentsByGroup() {
@@ -42,7 +42,7 @@ public class StudentManagement {
         return ans.toString();
     }
 
-    /*
+    /**
      *  Remove id-th student from list.
      */
     public void removeStudent(String id) {
