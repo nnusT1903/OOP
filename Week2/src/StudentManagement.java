@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 public class StudentManagement {
-    static Student[] students = new Student[100];
-    Integer count = 0;
+    private int count = 0;
+    private Student[] students = new Student[100];
 
     public static boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
@@ -54,7 +54,7 @@ public class StudentManagement {
             }
         }
 
-        if (index == -1) {
+        if (index < 0) {
             System.err.println("Invalid");
             return;
         }

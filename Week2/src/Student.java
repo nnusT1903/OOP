@@ -26,6 +26,20 @@ public class Student {
     }
 
     /**
+     * Full Constructor.
+     * @param name getName()
+     * @param id    getId()
+     * @param email getEmail()
+     * @param group getGroup()
+     */
+    public Student(String name, String id, String group, String email){
+        this.name = name;
+        this.id = id;
+        this.group = group;
+        this.email = email;
+    }
+
+    /**
      * Getters.
      */
     public String getName() {
@@ -40,22 +54,34 @@ public class Student {
         return id;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     /**
-     * Setter.
+     * Setters.
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
     }
 
     /**
      * Get information.
      */
     public String getInfo() {
-        String temp = "";
-        temp = temp + name + " - ";
-        temp = temp + id + " - ";
-        temp = temp + group + " - ";
-        temp = temp + email;
+        String temp = name + " - " + id + " - " + group + " - " + email;
         return temp;
     }
 
