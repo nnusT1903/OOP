@@ -3,16 +3,16 @@ import java.util.Objects;
 public class StudentManagement {
     static Student[] students = new Student[100];
     Integer count = 0;
-    public static boolean sameGroup(Student s1, Student s2){
+    public static boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
     }
 
-    public void addStudent(Student newStudent){
+    public void addStudent(Student newStudent) {
         students[count] = new Student(newStudent);
         count ++;
     }
 
-    public String studentsByGroup(){
+    public String studentsByGroup() {
         if (students[0] == null) {
             return "";
         }
@@ -58,6 +58,10 @@ public class StudentManagement {
         //reduce count by 1
         count--;
     }
+
+    /**
+     * Main.
+     */
 
     public static void main(String[] args) {
         StudentManagement solution = new StudentManagement();

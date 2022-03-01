@@ -8,7 +8,7 @@ public class Student {
      * Constructor.
      */
 
-    public Student(){
+    public Student() {
         name = "Student";
         id = "000";
         group = "K62CB";
@@ -19,7 +19,7 @@ public class Student {
      * Constructor 2.
      */
 
-    public Student(String name, String id, String email){
+    public Student(String name, String id, String email) {
         this.name = name;
         this.id = id;
         this.email = email;
@@ -29,29 +29,29 @@ public class Student {
     /**
      * Getters
      */
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String getGroup(){
+    public String getGroup() {
         return group;
     }
 
-    public String getId(){
+    public String getId() {
         return id;
     }
 
     /**
      * Setter
      */
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
     /**
      * Get information
      */
-    public String getInfo(){
+    public String getInfo() {
         String temp = "";
         temp = temp + name + " - " ;
         temp = temp + id + " - " ;
@@ -63,7 +63,7 @@ public class Student {
     /**
      * Copy Data
      */
-    public Student(Student s){
+    public Student(Student s) {
         this.name = s.name;
         this.id = s.id;
         this.group = s.group;
