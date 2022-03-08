@@ -1,9 +1,57 @@
-public class Student {
+public class Student extends Person {
     private String program;
     private int year;
     private double fee;
 
+    /**
+     * Constructor.
+     * @param name      String
+     * @param address   String
+     * @param program   String
+     * @param fee       Double
+     * @param year      Integer
+     */
     public Student(String name, String address, String program, int year, double fee) {
-        super(name,address);
+        super(name, address);
+        this.fee = fee;
+        this.program = program;
+        this.year = year;
     }
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+
+    /**
+     * Override toString function.
+     * @return String
+     */
+    public String toString() {
+        return "Student[Person[name=" + getName()
+                + ",address=" + getAddress()
+                + "],program=" + getProgram()
+                + ",year=" + getYear()
+                + ",fee=" + getFee() + "]";
+    }
+
 }
