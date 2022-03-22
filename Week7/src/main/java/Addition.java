@@ -2,6 +2,7 @@ public class Addition extends BinaryExpression {
 
     /**
      * Constructor.
+     *
      * @param left  Expression
      * @param right Expression
      */
@@ -12,15 +13,18 @@ public class Addition extends BinaryExpression {
 
     /**
      * Override Function for Addition.toString.
-     * @return  String
+     *
+     * @return String
      */
 
     @Override
     public String toString() {
-        return "(" + left.toString() + "," + right.toString() + ")";
+        return "(" + left.toString() + " + " + right.toString() + ")";
     }
 
-    /** Override Function for Addition.evaluate.
+    /**
+     * Override Function for Addition.evaluate.
+     *
      * @return double
      */
 

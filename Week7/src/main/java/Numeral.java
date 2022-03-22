@@ -3,32 +3,35 @@ public class Numeral extends Expression {
 
     /**
      * Constructor.
+     *
      * @param value double
      */
 
-    public Numeral(double value){
+    public Numeral(double value) {
         this.value = value;
     }
 
     /**
      * Constructor.
      */
-    public Numeral(){
+    public Numeral() {
 
-    };
+    }
 
     /**
      * Override Function for Numeral.toString
-     * @return  String
+     *
+     * @return String
      */
 
     @Override
     public String toString() {
-        return String.format("%.0f",this.value);
+        return String.format("%.0f", this.value);
     }
 
     /**
      * Override Function for Numeral.evaluate.
+     *
      * @return double
      */
 

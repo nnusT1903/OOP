@@ -1,21 +1,21 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class ExpressionTest {
 
-
+    /**
+     * Main Function.
+     * @param args Strings
+     */
     public void main(String[] args) {
-        ArrayList<Numeral> list = new ArrayList<>();
-        Numeral n1 = new Numeral(10);
-        Numeral n2 = new Numeral(3);
-        Numeral n3 = new Numeral(4);
-        Numeral n4 = new Numeral(0);
-        list.add(n1);
-        list.add(n2);
-        list.add(n3);
-        list.add(n4);
+        Numeral ten = new Numeral(10);
+        Numeral three = new Numeral(3);
+        Numeral four = new Numeral(4);
+        Numeral zero = new Numeral(0);
 
-        Square square = new Square(list.get(1));
+        Square square = new Square(ten);
+        Multiplication multiplication = new Multiplication(four, three);
+        Subtraction subtraction = new Subtraction(square, three);
+        Addition addition = new Addition(subtraction, multiplication);
+        Square finalAns = new Square(addition);
 
+        System.out.println(finalAns);
     }
 }

@@ -4,6 +4,7 @@ public abstract class BinaryExpression extends Expression {
 
     /**
      * Constructor.
+     *
      * @param left  Expression
      * @param right Expression
      */

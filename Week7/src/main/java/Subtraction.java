@@ -24,11 +24,12 @@ public class Subtraction extends BinaryExpression {
 
     /**
      * Override Function for Subtraction.evaluate.
+     *
      * @return double
      */
 
     @Override
     public double evaluate() {
-        return this.left.evaluate()-this.right.evaluate();
+        return this.left.evaluate() - this.right.evaluate();
     }
 }

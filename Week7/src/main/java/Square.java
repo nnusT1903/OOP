@@ -1,5 +1,5 @@
 public class Square extends Expression {
-    private Expression expression;
+    private final Expression expression;
 
     /**
      * Constructor.
@@ -13,6 +13,7 @@ public class Square extends Expression {
 
     /**
      * Override Function for Square.toString.
+     *
      * @return String
      */
 
@@ -23,11 +24,12 @@ public class Square extends Expression {
 
     /**
      * Override function for Square.evaluate.
+     *
      * @return double
      */
 
     @Override
     public double evaluate() {
-        return Math.pow(this.expression.evaluate(),2);
+        return Math.pow(this.expression.evaluate(), 2);
     }
 }
