@@ -4,7 +4,7 @@ public class ExpressionTest {
      * Main Function.
      * @param args Strings
      */
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Numeral ten = new Numeral(10);
         Numeral three = new Numeral(3);
         Numeral four = new Numeral(4);
