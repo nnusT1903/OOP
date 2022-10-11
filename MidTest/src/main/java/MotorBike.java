@@ -3,7 +3,7 @@ public class MotorBike extends Vehicle {
     private boolean hasSidecar;
 
     /**
-     * Constructor for objects of class MotorBike.
+     * Inherited constructor for objects of class MotorBike.
      * @param brand              String
      * @param model              String
      * @param registrationNumber String
@@ -18,16 +18,16 @@ public class MotorBike extends Vehicle {
     }
 
     /**
-     * Get Info.
-     * @return String.
+     * Get Info about the Vehicle.
+     * @return A string with information about the motorbike.
      */
 
     public String getInfo() {
         String info = "Motor Bike:";
-        info += String.format("\n\tBrand: %s", this.brand);
-        info += String.format("\n\tModel: %s", this.model);
-        info += String.format("\n\tRegistration Number: %s", this.registrationNumber);
-        info += String.format("\n\tHas Side Car: %b", this.hasSidecar);
+        info += String.format("\n\tBrand: %s", this.getBrand());
+        info += String.format("\n\tModel: %s", this.getModel());
+        info += String.format("\n\tRegistration Number: %s", this.getRegistrationNumber());
+        info += String.format("\n\tHas Side Car: %b", this.isHasSidecar());
         info += String.format("\n\tBelongs to %s - %s",
                 this.owner.getName(), this.owner.getAddress());
         return info;

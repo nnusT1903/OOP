@@ -1,4 +1,4 @@
-abstract class Vehicle {
+public abstract class Vehicle {
 
     protected String brand;
     protected String model;
@@ -6,7 +6,7 @@ abstract class Vehicle {
     protected Person owner;
 
     /**
-     * Constructor for objects of class Vehicle.
+     * Abstract constructor for objects of class Vehicle.
      * @param brand String
      * @param model String
      * @param registrationNumber String

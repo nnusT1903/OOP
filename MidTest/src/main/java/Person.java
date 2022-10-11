@@ -27,7 +27,7 @@ public class Person {
     }
 
     /**
-     * Remove vehicle from person.
+     * Remove vehicle from person via regisNumber.
      * @param registrationNumber registration number of vehicle
      */
 
@@ -50,9 +50,9 @@ public class Person {
             return this.name + " has no vehicle!";
         }
         StringBuilder sb = new StringBuilder();
-        sb.append(this.name + " has:\n\n");
+        sb.append(this.name).append(" has:\n\n");
         for (Vehicle vehicle : vehicleList) {
-            sb.append(vehicle.getInfo() + "\n");
+            sb.append(vehicle.getInfo()).append("\n");
         }
         return sb.toString();
     }

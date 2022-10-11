@@ -3,7 +3,7 @@ public class Car extends Vehicle {
     private int numberOfDoors;
 
     /**
-     * Constructor for objects of class Car.
+     * Inherited constructor for objects of class Car.
      * @param brand              String
      * @param model              String
      * @param registrationNumber String
@@ -18,16 +18,16 @@ public class Car extends Vehicle {
     }
 
     /**
-     * Get Info.
+     * Get Info about the Vehicle.
      * @return A string with information about the car.
      */
 
     public String getInfo() {
         String info = "Car:";
-        info += String.format("\n\tBrand: %s", this.brand);
-        info += String.format("\n\tModel: %s", this.model);
-        info += String.format("\n\tRegistration Number: %s", this.registrationNumber);
-        info += String.format("\n\tNumber of Doors: %d", this.numberOfDoors);
+        info += String.format("\n\tBrand: %s", this.getBrand());
+        info += String.format("\n\tModel: %s", this.getModel());
+        info += String.format("\n\tRegistration Number: %s", this.getRegistrationNumber());
+        info += String.format("\n\tNumber of Doors: %d", this.getNumberOfDoors());
         info += String.format("\n\tBelongs to %s - %s",
                 this.owner.getName(), this.owner.getAddress());
         return info;
